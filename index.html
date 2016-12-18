@@ -1,0 +1,59 @@
+<!Doctype html>
+<html>
+<head>
+  <title>Local Weather App</title>
+</head>
+
+<body>
+  <div class="main-container">
+  <div class="weather_container">
+    <div class="text-center" id="location_marker"><span class="glyphicon glyphicon-map-marker"></span></div>
+    <div class="weather_content">
+      <div class="placeDayDate">
+        <div id="city"></div>
+        <div id="day"></div>
+        <div id="date"></div>
+      </div>
+      <div class="climate_info">
+        <div id="climate"></div><a id="temp" href="#" data-toggle="tooltip" title="Change to Fahrenheit"></a>
+
+        <div>
+          <i class="wi"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!--Modal to be displayed in page load to ask for the choosen city or choose current user's location-->
+  <div class="modal fade weather-modal" id="weather-modal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+
+          <h3 class="modal-title text-center" style="font-weight:bold">Local Weather App</h3>
+        </div>
+        <div class="modal-body text-center">
+          <div class=row>
+            <div>Enter City&nbsp;&nbsp;<input type="text" placeholder=" Mumbai" id="cityModal" />&nbsp;&nbsp;<span id="cityModalError"><span></div>
+          </div>
+          <br/>
+          <div class="row">
+            <div>OR</div>
+          </div>
+          <br/>
+          <div class="row">
+            <div><button class="btn btn-primary" id="currentLocationModal" data-dismiss="modal">Choose current location</div>
+          </div>
+          </div>
+           
+        <div class="modal-footer">
+          <button type="button" id="submitModal" class="btn btn-default btn-lg center-block" data-dismiss="modal">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/Modal-->
+
+</body>
+<html>
